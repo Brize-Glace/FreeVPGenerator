@@ -25,6 +25,14 @@ monButton2.addEventListener("click", function(){
     vpChoose.style.display = "none"
     formulaireCB.style.display = "block"
 })
+
+var cbSubmit =  document.getElementById("submitCB")
+var thanks = document.getElementById("thanks")
+
+cbSubmit.addEventListener("click", function(){
+    formulaireCB.style.display = "none";
+    thanks.style.display = "block";
+})
 console.log(spin)
 
 

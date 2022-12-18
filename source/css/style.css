@@ -14,6 +14,14 @@
     animation: spinner 800ms linear infinite;
     display: none;
 }
+input {
+    background-color: #ff4655;
+    color: white;
+    border-radius: 7px;
+}
+::placeholder{
+    color: black;
+}
 
 @keyframes spinner {
     from {

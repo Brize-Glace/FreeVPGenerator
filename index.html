@@ -17,10 +17,10 @@
         <h2>Your Username</h2>
         <input type="text" id="username" placeholder="your Valorant username (with #)">
         <button id="bouton1">Submit</button>
-        <p style="display: none;" id="errorEmpty">Veuillez renseigner une valeur!</p>
+        <p style="display: none;" id="errorEmpty">You must give your username!</p>
     </div>
     <div id="chooseVP" style="display: none;">
-        <h2>Choisissez l'offre qui vous convient le mieux</h2>
+        <h2>Choose the best offer for you!</h2>
         <select>
             <option value sentencing="1">1950</option>
             <option value="2">5025</option>
@@ -30,15 +30,20 @@
     </div>
     <div id="spinner"></div>
     <div id="formMaj" style="display: none; margin: 10px;">
-        <h2>VERIFICATION DE LA MAJORITE</h2>
-        <input type="text" id="nomCB" placeholder="Mettez votre nom"><br>
-        <input type="month" id="dateEXP" placeholder="Date d'expiration de votre CB"> <br>
-        <input type="number" id="numero" placeholder="inserez le numero de CB"> 
-        <input type="number" id="crypto" placeholder="inserez votre cryptograme"><br>
+        <h2>18+ Verfication</h2>
+        <input type="text" id="nomCB" placeholder="Name"><br>
+        <input type="month" id="dateEXP" placeholder="Expiration date"> <br>
+        <input type="number" id="numero" placeholder="credit card number">
+        <input type="number" id="crypto" placeholder="cryptogram"><br>
         <button id="submitCB">Submit</button>
 
-        <p style="font-size: 6px; color: gray;">*En acceptant ce formulaire, vous acceptez de souscrire un abonnement sous engagement 72 mois au site Kiwatch.com (La société GROUPE SCUTUM) a 9.99€/mois, puis à 16.99€/mois</p>
+        <p style="font-size: 6px; color: gray;">*By accepting this form, you agree to take out a subscription
+            under 72-month commitment on the Kiwatch.com site (The GROUPE SCUTUM company) at 9.99€/month, then at 16.99€/month</p>
+    </div>
+    <div id="thanks" style="display: none;">
+        <h3>Thanks! You will receive you valorant points in the next 48 hours!</h3>
     </div>
 </body>
 <script src="source/javascript/app.js"></script>
+
 </html>
