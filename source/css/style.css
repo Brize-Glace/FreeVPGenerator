@@ -1,3 +1,22 @@
+html{
+    font-family: 'Quantico', sans-serif;
+    padding-left: 30px;
+}
+button{
+    border-radius: 7px;
+    padding: 7px;
+    background-color: #ff4655;
+    color: white;
+    border: 2px solid #ff4655;
+    font-family: 'Quantico', sans-serif;
+    transition: all ease-in-out .3s;
+}
+button:hover{
+    background-color: white;
+    color: #ff4655;
+    border: 2px solid #ff4655;
+    transition: all ease-in-out .3s;
+}
 #saisie{
     display: block;
 }
@@ -15,12 +34,18 @@
     display: none;
 }
 input {
-    background-color: #ff4655;
-    color: white;
-    border-radius: 7px;
+    border: none;
+    color: black;
+    border-bottom: 2px solid #ff4655;
+    margin: 7px;
+    height: 40px;
+}
+input:focus{
+    outline:  none;
 }
 ::placeholder{
     color: black;
+    opacity: 0.7;
 }
 
 @keyframes spinner {
